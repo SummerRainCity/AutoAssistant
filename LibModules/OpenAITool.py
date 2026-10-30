@@ -5,7 +5,7 @@ from openai import OpenAI
 # setx ARK_API_KEY "ark-key"
 # $env:ARK_API_KEY = "ark-key"
 # print("环境变量 ARK_API_KEY =", os.getenv("ARK_API_KEY"))
-# C:\Users\Alan>echo %ARK_API_KEY%
+# C:\Users\>echo %ARK_API_KEY%
 # Pro模型！
 # ark-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # 选择：doubao-seed-2-0-pro-260215
@@ -91,7 +91,7 @@ def open_ai_doubao(question):
 
 
 # 答题用的系统提示词（选择题、多选题、判断题、填空题都走这一套）
-SYS_TIMU = "你是XXXXXXXXXX学生，你是学霸，你必须全网搜索相关知识。但回答精简，填空题以外的题目只回答大写字符ABC等，答案只答A或ABC或AD，禁止有多余的符号。你需要回答选择题、单选题、多选题、填空题！但是填空题我们会告诉你答案是几个字，填空题严格按照要求的回答字符个数来！"
+SYS_TIMU = "你是XXX学霸，全网搜索相关知识。但回答精简，填空题以外的题目只回答大写字符ABC等，答案只答A或ABC或AD，禁止有多余的符号。你需要回答选择题、单选题、多选题、填空题！但是填空题我们会告诉你答案是几个字，填空题严格按照要求的回答字符个数来！"
 
 # 模型降级链：(模型名, 客户端, 模型ID)，按顺序尝试，前一个失败自动换下一个
 # 典型场景：豆包 pro 触发 SetLimitExceeded（安心体验模式额度用尽，服务被暂停）→ 自动切 mini → 再切 DeepSeek
