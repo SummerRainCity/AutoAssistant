@@ -1,0 +1,2 @@
+打开：
+https://github.com/hiroi-sora/PaddleOCR-json
